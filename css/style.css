@@ -1,0 +1,60 @@
+*{
+  margin: 0px;             
+  padding: 0px;            
+  box-sizing: border-box;  
+}
+
+#filme {
+    width: 100%;                /* 100% da largura da pagina */
+    display: flex;             /* Alinhamento das divs */
+    justify-content: center;  /* centralização das divs child */
+    /* Envolve todo o campo de visão do usuário, retirando a  barra de rolagem da horizontal, e quebrando o conteúdo */
+    flex-wrap: wrap;
+    background: rgb(11,11,14);
+    background: linear-gradient(90deg, rgba(11,11,14,1) 19%, rgba(222,7,7,1) 100%);
+}
+
+#filme div {
+    width: 25%;                            /* Largura de cada div child */
+    margin: 20px;                          /* Espaçamento externo de uma div para outra */
+    transition: ease 1.5;
+    box-shadow: 0px 1.5px 5px rgb(0, 0, 0);      /* Sombra da caixa: coordenada X, coordenada Y, esfumação, cor  */ 
+    font-size: 20px;
+    font-family: 'Ysabeau SC', sans-serif;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    border-top-left-radius: 5px;  
+    border-top-right-radius: 5px;
+}
+
+#filme div img {
+    width: 100%;  /* largura da imagem da sua div */
+    border-bottom-left-radius: 5px;  /* arrendodamento da borda superior esquerda */
+    border-bottom-right-radius: 5px; /* arredondamento da borda superior direita */
+    margin-top: 0px;
+    border-top-left-radius: 5px;  
+    border-top-right-radius: 5px;
+
+
+}
+
+h1 {
+    background: rgb(11,11,14);
+    background: linear-gradient(90deg, rgba(11,11,14,1) 19%, rgba(222,7,7,1) 100%);
+    justify-content: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    color: rgb(253, 251, 253);
+    font-size: 50px;
+
+
+}
+
+#filme div:hover {
+    transition: ease 2s;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 100vw rgba(190, 62, 62, 0.521);
+    border-radius: 5px;
+}
